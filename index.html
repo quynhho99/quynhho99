@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+  <title>Web browser</title>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+  .all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+.browser {
+  background: white;
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+</style>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<div class="grid-container">
+  <div class="item1">Perfumes</div>
+  <div class="item2">Menu</div>
+  <div class="item3">
+<article class="all-perfumes">
+  <h1>Most Popular Perfumes</h1>
+  <article class="Perfumes">
+    <h2>Channel Coco</h2>
+    <p>COCO MADEMOISELLE Eau de Parfum Intense is the fragrance of a free and seductive woman. An individual fragrance with notes of woody and oriental amber notes: sensual, deep, and full of charm.!</p>
+  </article>
+  <article class="Perfumes">
+    <h2>Mozilla Versaci crystal noir</h2>
+    <p>Crystal Noir Perfume by Versace, A dreamy, creamy white floral oriental, Crystal Noir beautifully combines elements of warm spice, sensual blooms, blended woods and exotic undertones of velvety smooth coconut.</p>
+  </article>
+  <article class="Perfumes">
+    <h2>signorina salvatore</h2>
+    <p>Signorina by Salvatore Ferragamo is a Floral Fruity fragrance for women. Signorina was launched in 2011. Signorina was created by Sophie Labbe and Juliette Karagueuzoglou. Top notes are Red Currant and Pink Pepper; middle notes are Rose, Peony and Jasmine; base notes are Panacotta, Musk and Patchouli.</p>
+  </article>
+</article></div>  
+  <div class="item4"> <img src="P1.Jpeg" alt="P1" width="150" height="200"> <br />
+  <img src="P2.jpeg" alt="P2" width="150" height="200"> <br />
+     <img src="P3.jpeg" alt="p3" width="150" height="200"> <br /> 
+  
+  </div>
+  <div class="item5">  <p>Quynhho, 2021<br />
+            <br />
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img style="border:none;height:31px;width:31px;text-decoration:none;"
+                    src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/html_logo_grayscale_31.png"
+                    alt="Valid HTML"  /></a>
+
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:none;width:88px;height:31px;text-decoration:none;"
+                     src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/css_logo_grayscale_31.png"
+                     alt="Valid CSS" /></a>
+        </p></div>
+</div>
 
 </body>
 </html>
